@@ -1,0 +1,128 @@
+{
+  "_args": [
+    [
+      "@academysports/fusion-components@1.1.49",
+      "C:\\Users\\anireddy1\\Documents\\apps\\ui-component-registry"
+    ]
+  ],
+  "_from": "@academysports/fusion-components@1.1.49",
+  "_id": "@academysports/fusion-components@1.1.49",
+  "_inBundle": false,
+  "_integrity": "sha512-UkoJ0GlxBK9jkCp7ht7L0zGB29ofRrlG5dNSzniaXe0mlrxU4baZh1fZoMPzFt20g1cInQyHpT8UXWlRP437kA==",
+  "_location": "/@academysports/fusion-components",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@academysports/fusion-components@1.1.49",
+    "name": "@academysports/fusion-components",
+    "escapedName": "@academysports%2ffusion-components",
+    "scope": "@academysports",
+    "rawSpec": "1.1.49",
+    "saveSpec": null,
+    "fetchSpec": "1.1.49"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@academysports/fusion-components/-/fusion-components-1.1.49.tgz",
+  "_spec": "1.1.49",
+  "_where": "C:\\Users\\anireddy1\\Documents\\apps\\ui-component-registry",
+  "author": {
+    "name": "SapientRazorfish"
+  },
+  "dependencies": {
+    "react-responsive": "^5.0.0",
+    "react-tooltip": "^3.6.1"
+  },
+  "description": "A repository of the common atomic components used across the academy sites",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "8.2.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-emotion": "^9.1.2",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.11",
+    "emotion": "^9.2.3",
+    "emotion-theming": "^9.2.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "ignore-styles": "^5.0.1",
+    "image-webpack-loader": "^4.3.1",
+    "istanbul": "^0.4.5",
+    "jsdom": "^11.10.0",
+    "json-loader": "^0.5.7",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.3",
+    "plop": "^2.0.0",
+    "postcss": "^6.0.22",
+    "postcss-loader": "^2.1.5",
+    "postcss-modules-scope": "^1.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.12.1",
+    "prettier-eslint": "^8.8.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-emotion": "^9.2.3",
+    "react-styleguidist": "^7.3.8",
+    "react-test-renderer": "^16.3.2",
+    "rimraf": "^2.6.2",
+    "sinon-chai": "^3.0.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://bitbucket.org/academysports/ui-atomic-components#readme",
+  "keywords": [
+    "atomic",
+    "design",
+    "atoms",
+    "components",
+    "fusion"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@academysports/fusion-components",
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "emotion": "^9.1.3",
+    "emotion-theming": "^9.1.2",
+    "react-emotion": "^9.1.3",
+    "react-responsive": "^4.1.0"
+  },
+  "pre-commit": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/academysports/ui-atomic-components.git"
+  },
+  "scripts": {
+    "build": "npm run clean && webpack --config webpack.dist.config.js",
+    "build:dev": "npm run clean && webpack --config webpack.dev.config.js",
+    "clean": "rimraf ./dist",
+    "generate": "plop",
+    "lint": "eslint components",
+    "prepublishOnly": "npm run build",
+    "start": "npx styleguidist server",
+    "test": "cross-env NODE_ENV=test mocha --reporter spec test-setup.js \"components/**/tests/*.test.js\" "
+  },
+  "version": "1.1.49"
+}
